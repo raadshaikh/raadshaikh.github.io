@@ -2,10 +2,14 @@
   <head></head>
   <body>
     This site has been moved to idioticbaka1824.github.io.
-    <br><a id='redirector' href=''>Click here to redirect!</a>
+    <br><a id='redirector' href=''>If you are not redirected automatically, click here to redirect!</a>
   </body>
   <script>
       var newlink=window.location.href.replace('raadshaikh','idioticbaka1824');
       document.getElementById('redirector').href=newlink;
+      function redirect_auto(){
+        window.location.href=newlink;
+      }
+      setTimeout(redirect_auto, 2000);
     </script>
 </html>
